@@ -1,6 +1,6 @@
 
 import './App.scss';
-import React, {useState} from 'react'
+
 //import my material UI config
 import { lightTheme } from './config/ThemeConfig'
 import { createTheme, makeStyles, ThemeProvider } from '@material-ui/core/styles'
@@ -20,6 +20,7 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     minHeight: "80vh",
     flexDirection: "column",
+    marginTop: 10
     // marginLeft: drawerWidth,
     // marginRight: drawerWidth
   },
@@ -32,7 +33,7 @@ const useStyles = makeStyles((theme) => ({
 function App() {
 
   const classes = useStyles();
-  const [open, setOpen] = useState(false);
+
 
   return (
     <ThemeProvider theme={createTheme(lightTheme)}>
@@ -40,8 +41,8 @@ function App() {
        
         <BrowserRouter>
         
-        <Header open={open} setOpen={setOpen}/>
-        <SideBar open={open} setOpen={setOpen} />
+        <Header />
+        
         <div className={classes.content}>
        
             <Switch>

@@ -10,16 +10,21 @@ export const theme = createTheme({
       
     },
     h3:{
-       
-        
+       //medium title
+       fontSize: 30,
+       fontWeight: 'bold' 
     },
     h2:{
-       
-        fontSize: 55,
+       //large title
+        fontSize: 65,
+        fontWeight: 'bold'
     }, 
     h4:{
      
-        fontSize: 12
+        fontSize: 20
+    },
+    h5:{
+      fontSize: 16
     },
     subtitle1:{
     
@@ -41,24 +46,10 @@ export const theme = createTheme({
     }, 
     text: {
       primary: '#5c5c5c',
-      
+      secondary: '#697FE2'
     } 
   },
 });
 
 export const lightTheme = responsiveFontSizes(theme);
 
-export const darkTheme = createTheme({
-  typography:{
-    fontFamily: 'Poppins, sans-serif',
-  },
-  palette: {
-    type: 'dark',
-    primary: {
-      main: '#002e44'
-    },
-    secondary: {
-      main: '#ffbc00'
-    }, 
-  },
-});

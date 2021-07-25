@@ -1,19 +1,21 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core";
-import FormBackground from "../../../assets/ticketappBackground.jpg";
+// import FormBackground from "../../../assets/26199.jpg";
 const useStyles = makeStyles((theme) => ({
   root: {
     backgroundRepeat: "no-repeat",
     backgroundPosition: "center center",
-    backgroundSize: "cover",
+    backgroundSize: "contain",
     backgroundAttachment: "sticky",
-    height: "100vh",
-    backgroundImage: `url(${FormBackground})`,
+    height: "80vh",
+    // backgroundImage: `url(${FormBackground})`,
     width: "100%",
     display: "flex",
     flexDirection: "column",
     justifyContent: "center",
     alignItems: "center",
+
+    opacity: 0.6
   },
 }));
 
