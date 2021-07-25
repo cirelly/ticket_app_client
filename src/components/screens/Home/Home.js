@@ -1,9 +1,9 @@
 import React from 'react'
-import HomeOrganism from '../../organisms/Home/HomeOrganism'
+import WelcomeSection from '../../organisms/SectionsHome/WelcomeSection'
  const Home = () => {
      return (
          <div>
-                <HomeOrganism />      
+                <WelcomeSection />      
          </div>
      )
  }

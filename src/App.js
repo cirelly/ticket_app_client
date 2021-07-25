@@ -2,7 +2,7 @@
 import './App.scss';
 import React, {useState} from 'react'
 //import my material UI config
-import { lightTheme } from './components/config/ThemeConfig'
+import { lightTheme } from './config/ThemeConfig'
 import { createTheme, makeStyles, ThemeProvider } from '@material-ui/core/styles'
 import { CssBaseline } from '@material-ui/core/'
 import { BrowserRouter,Redirect, Route, Switch } from "react-router-dom";

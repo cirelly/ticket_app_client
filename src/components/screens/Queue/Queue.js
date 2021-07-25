@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react'
 import FirstQueue from '../../organisms/Queue/FirstQueue'
 import SecondQueue from '../../organisms/Queue/SecondQueue'
-import * as customerServices from '../../services/CustomerServices'
+import * as customerServices from '../../../services/CustomerServices'
 const Queue = () => {
     
 
@@ -23,15 +23,10 @@ const Queue = () => {
         setSecondQueue(secondQueue)
   };
 
-  const getAttendedCustomer = async () =>{
-      const response = await customerServices.getAttendedCustomer()
-
-      setAttended(response.data.data)
-  }
 
   useEffect(() => {
       getQueues();
-      getAttendedCustomer()
+     
   }, [])
 
   console.log(attended);

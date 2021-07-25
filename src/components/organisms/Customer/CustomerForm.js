@@ -2,8 +2,8 @@ import React from 'react'
 import {Grid, Box, Typography, Button} from '@material-ui/core'
 import { useForm } from 'react-hook-form'
 import CommonInput from '../../atoms/inputs/CommonInput'
-import validationRegister from '../../utils/validationRegister'
-import * as customerServices from '../../services/CustomerServices'
+import validationRegister from '../../../utils/validationRegister'
+import * as customerServices from '../../../services/CustomerServices'
 const CustomerForm = () => {
 
 
