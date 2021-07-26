@@ -6,23 +6,21 @@ import { lightTheme } from './config/ThemeConfig'
 import { createTheme, makeStyles, ThemeProvider } from '@material-ui/core/styles'
 import { CssBaseline } from '@material-ui/core/'
 import { BrowserRouter,Redirect, Route, Switch } from "react-router-dom";
-import clsx from 'clsx'
 //import my components 
 import Queue from './components/screens/Queue/Queue';
 import Home from './components/screens/Home/Home';
-import SideBar from './components/organisms/SideBar/SideBar'
+
 import Header from './components/organisms/Header/Header'
 import Customer from './components/screens/Customer/Customer';
 
-const drawerWidth = 240
+
 const useStyles = makeStyles((theme) => ({
   content: {
     display: "flex",
     minHeight: "80vh",
     flexDirection: "column",
     marginTop: 10
-    // marginLeft: drawerWidth,
-    // marginRight: drawerWidth
+
   },
  
   footer: {
