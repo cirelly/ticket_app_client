@@ -9,7 +9,8 @@ import { makeStyles } from '@material-ui/core/styles';
 const useStyles = makeStyles((theme) => ({
     
     root:{
-        width: "100%"
+        width: "100%",
+    
     }
 
 }));
@@ -27,12 +28,15 @@ const CommonInput = ({ shrink, name, ...props}) => {
         name={name}
         className={classes.root}
         InputLabelProps={
-            shrink ?
+            (shrink ?
                 {
                     shrink: true,
                 }
                 :
-                undefined
+                undefined),
+                {style: {color: '#5c5c5c'}}
+               
+                
         }
         InputProps={
             {

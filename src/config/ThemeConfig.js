@@ -38,11 +38,12 @@ export const theme = createTheme({
     type: 'light',
     primary: {
      
-      main: '#032854',
+      main: '#5c5c5c',
+    
     },
     secondary: {
-      main: '#ffbc00',
-      contrastText: '#032854'
+      main: '#697FE2',
+    
     }, 
     text: {
       primary: '#5c5c5c',
