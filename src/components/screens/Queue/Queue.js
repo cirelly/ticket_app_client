@@ -48,7 +48,7 @@ const Queue = () => {
         
         
   };
-  console.log(reloadQueue);
+ 
   useEffect(() => {
     
     getQueues();
